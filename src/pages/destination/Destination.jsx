@@ -1,39 +1,10 @@
-import DestinationCard from "./DestinationCard";
-
 import DestinationPic1 from "../../assets/image/DestinationPic1.png";
 import DestinationPic2 from "../../assets/image/DestinationPic2.png";
 import DestinationPic3 from "../../assets/image/DestinationPic3.png";
 import DestinationPic4 from "../../assets/image/DestinationPic4.png";
 import DestinationPic5 from "../../assets/image/DestinationPic5.png";
 import { Link } from "react-router-dom";
-
-const CardItem = [
-  {
-    id: 1,
-    img: DestinationPic1,
-    title: "Bangkok",
-  },
-  {
-    id: 2,
-    img: DestinationPic2,
-    title: "Chiang Mai",
-  },
-  {
-    id: 3,
-    img: DestinationPic3,
-    title: "Chon Buri",
-  },
-  {
-    id: 4,
-    img: DestinationPic4,
-    title: "Phuket",
-  },
-  {
-    id: 5,
-    img: DestinationPic5,
-    title: "Ubon Ratchatani",
-  },
-];
+import Button from "../../utils/Button";
 
 const Destination = () => {
   return (
@@ -103,6 +74,9 @@ const Destination = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="flex justify-end">
+        <Button title="See more" />
       </div>
     </div>
   );
