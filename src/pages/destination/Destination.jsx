@@ -10,7 +10,7 @@ const Destination = () => {
   return (
     <div className="container max-w-screen-2xl mx-auto xl:px-28 px-4 py-20 space-y-8">
       <div className="flex flex-col md:flex-row gap-4">
-        <h1 className="text-5xl font-semibold text-left uppercase md:p-1.5 inline-flex">
+        <h1 className="text-5xl font-semibold uppercase text-gradient text-left md:p-1.5 inline-flex">
           Top Destinations
         </h1>
       </div>
