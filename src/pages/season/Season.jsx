@@ -1,33 +1,20 @@
-import { useEffect, useState } from "react";
-import Button from "../../utils/Button";
+import { useState } from "react";
+
 import { IoIosPartlySunny, IoIosRainy, IoIosSnow } from "react-icons/io";
+
 import SeasonCard from "./SeasonCard";
 import { SEASON_HIGHLIGHT } from "../../utils/data";
 
 const Season = () => {
-  const [seasonData, setSeasonData] = useState([]);
-  const [filterSeason, setFilterSeason] = useState([]);
-  const [selectedSeason, setSelectedSeason] = useState("Summer");
+  const [seasonData, setSeasonData] = useState(SEASON_HIGHLIGHT);
+  const [selectedSeason, setSelectedSeason] = useState("");
 
-  useEffect(() => {
-    setSeasonData(SEASON_HIGHLIGHT);
-    setFilterSeason(SEASON_HIGHLIGHT);
-  }, []);
-
-  // ! filter SeasonHighlight
-
-  const FilterItem = (season) => {
-    const filtered =
-      season === "all"
-        ? seasonData
-        : seasonData.filter((item) => item.season === season);
-    setFilterSeason(filtered);
-    setSelectedSeason(season);
-  };
-
-  const showAll = () => {
-    setFilterSeason(seasonData);
-    setSelectedSeason("all");
+  const filterSeasons = (seasonType) => {
+    const filteredSeasons = SEASON_HIGHLIGHT.filter(
+      (season) => season.season === seasonType
+    );
+    setSeasonData(filteredSeasons);
+    setSelectedSeason(seasonType);
   };
 
   return (
@@ -39,29 +26,34 @@ const Season = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col gap-5 md:flex-row items-center justify-around ">
-          <Button title="All" onClick={showAll} />
-          <Button
-            onClick={() => FilterItem("Summer")}
-            title="Summer"
-            icon={<IoIosPartlySunny />}
-          />
-          <Button
-            onClick={() => FilterItem("Rainy")}
-            title="Rainy"
-            icon={<IoIosRainy />}
-          />
-          <Button
-            onClick={() => FilterItem("Winter")}
-            title="Winter"
-            icon={<IoIosSnow />}
-          />
+        <div className="flex flex-col gap-5 md:flex-row items-center justify-around  mb-4">
+          <button
+            onClick={() => filterSeasons("Summer")}
+            className={`flex items-center gap-4  bg-orange-400 px-6 text-white rounded-md py-2 font-semibold hover:bg-orange-800 transition-all duration-300 ease-in-out hover:text-black  ${
+              selectedSeason === "Summer" ? "active" : ""
+            }`}
+          >
+            Summer <IoIosPartlySunny />
+          </button>
+          <button
+            onClick={() => filterSeasons("Rainy")}
+            className={`flex items-center gap-4  bg-orange-400 px-6 text-white rounded-md py-2 font-semibold hover:bg-orange-800 transition-all duration-300 ease-in-out hover:text-black ${
+              selectedSeason === "Rainy" ? "active" : ""
+            } `}
+          >
+            Rainy <IoIosRainy />
+          </button>
+          <button
+            onClick={() => filterSeasons("Winter")}
+            className={`flex items-center gap-4  bg-orange-400 px-6 text-white rounded-md py-2 font-semibold hover:bg-orange-800 transition-all duration-300 ease-in-out hover:text-black ${
+              selectedSeason === "Winter" ? "active" : ""
+            } `}
+          >
+            Winter <IoIosSnow />
+          </button>
         </div>
         <div>
-          <SeasonCard
-            seasonData={filterSeason}
-            selectedSeason={selectedSeason}
-          />
+          <SeasonCard seasonData={seasonData} />
         </div>
       </div>
     </div>
