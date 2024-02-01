@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       {/* Footer top */}
-      <div className="bg-slate-500 flex flex-col pt-8 max-w-screen-2xl container mx-auto xl:px-28 px-4">
+      <div className="bg-slate-500 flex flex-col pt-8 max-w-screen-2xl  container mx-auto xl:px-28 px-4">
         <div className="mt-20 mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8  ">
           {FooterLink.map((item, index) => (
             <div key={item.title}>

@@ -28,7 +28,7 @@ const Articles1 = () => {
         </div>
         <div>
           <div className="mb-5 px-4">
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-700 leading-relaxed">
               In today's world, thanks to the internet, people can work from
               anywhere. Thailand stands out as a hotspot for Digital
               Nomads—those who Travel and work remotely using technology.

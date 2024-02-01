@@ -11,6 +11,14 @@
   }
 }
 
+.Articles-text {
+  @apply text-lg text-gray-700 leading-relaxed;
+}
+
+.Articles-Image {
+  @apply w-full h-auto rounded-lg;
+}
+
 .text-gradient {
   background: linear-gradient(96deg, #285091 11.46%, #4e8bf1 91.65%);
   background-clip: text;
