@@ -44,7 +44,7 @@ const InspiringCard = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
       {cardItem.map((item) => (
         <Link
-          to="/"
+          to={`/Articles/${item.id}`}
           key={item.id}
           className="rounded overflow-hidden shadow-lg p-4 relative transform transition duration-500 ease-in-out hover:scale-105"
         >
