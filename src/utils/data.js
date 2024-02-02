@@ -22,6 +22,13 @@ import win2 from "../assets/image/win2.png";
 import win3 from "../assets/image/win3.png";
 import win4 from "../assets/image/win4.png";
 
+import DestinationPic1 from "../assets/image/DestinationPic1.png";
+import DestinationPic2 from "../assets/image/DestinationPic2.png";
+import DestinationPic3 from "../assets/image/DestinationPic3.png";
+import DestinationPic4 from "../assets/image/DestinationPic4.png";
+import DestinationPic5 from "../assets/image/DestinationPic5.png";
+import DestinationPic6 from "../assets/image/DestinationPic6.png";
+
 export const PROMOTION = [
   {
     id: 1,
@@ -37,6 +44,15 @@ export const PROMOTION = [
     sub: "auspicious thai desserts",
     Link: "/",
   },
+];
+
+export const DESTINATIONS = [
+  { id: 1, name: "Bangkok", image: DestinationPic1 },
+  { id: 2, name: "Chiang Mai", image: DestinationPic2 },
+  { id: 3, name: "Chon Buri", image: DestinationPic3 },
+  { id: 4, name: "Phuket", image: DestinationPic4 },
+  { id: 5, name: "Ubon Ratchatanis", image: DestinationPic5 },
+  { id: 6, name: "Pattaya Beach", image: DestinationPic6 },
 ];
 
 export const SEASON_HIGHLIGHT = [
