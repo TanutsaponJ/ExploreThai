@@ -12,7 +12,7 @@
 }
 
 .Articles-text {
-  @apply text-lg text-gray-700 leading-relaxed;
+  @apply text-lg text-gray-700 leading-relaxed px-2;
 }
 
 .Articles-Image {

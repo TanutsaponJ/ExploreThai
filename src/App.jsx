@@ -4,6 +4,8 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import Articles1 from "./pages/Inspiring/articles/Articles1";
 import Articles2 from "./pages/Inspiring/articles/Articles2";
+import Articles3 from "./pages/Inspiring/articles/Articles3";
+import Articles4 from "./pages/Inspiring/articles/Articles4";
 
 const Layout = () => {
   return (
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/Articles/2",
         element: <Articles2 />,
+      },
+      {
+        path: "/Articles/3",
+        element: <Articles3 />,
+      },
+      {
+        path: "/Articles/4",
+        element: <Articles4 />,
       },
     ],
   },
