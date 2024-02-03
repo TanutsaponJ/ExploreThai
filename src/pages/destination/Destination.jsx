@@ -3,7 +3,7 @@ import Button from "../../utils/Button";
 import { FaArrowRight } from "react-icons/fa";
 import { DESTINATIONS } from "../../utils/data";
 
-const Destination = ({ DESTINATION }) => {
+const Destination = () => {
   return (
     <div className="container max-w-screen-2xl mx-auto xl:px-28 px-4 py-20 space-y-8 border-b-2">
       <div className="flex flex-col md:flex-row gap-4">
