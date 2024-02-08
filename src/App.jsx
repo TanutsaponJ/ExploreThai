@@ -10,6 +10,7 @@ import Articles5 from "./pages/Inspiring/articles/Articles5";
 import DestinationArticles1 from "./pages/destination/DestinationArticles/DestinationArticles1";
 import DestinationArticles2 from "./pages/destination/DestinationArticles/DestinationArticles2";
 import DestinationArticles3 from "./pages/destination/DestinationArticles/DestinationArticles3";
+import DestinationArticles4 from "./pages/destination/DestinationArticles/DestinationArticles4";
 
 const Layout = () => {
   return (
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: "/Destination/3",
         element: <DestinationArticles3 />,
+      },
+      {
+        path: "/Destination/4",
+        element: <DestinationArticles4 />,
       },
     ],
   },
