@@ -1,5 +1,9 @@
 import Promotionpic1 from "../assets/image/promotionpic1.jpeg";
 import Promotionpic2 from "../assets/image/promotionpic2.jpeg";
+import Promotionpic3 from "../assets/image/Promotionpic3.jpeg";
+import Promotionpic4 from "../assets/image/Promotionpic4.jpeg";
+import Promotionpic5 from "../assets/image/Promotionpic5.jpeg";
+import Promotionpic6 from "../assets/image/Promotionpic6.jpeg";
 
 // ! import Summer Season Highlight
 
@@ -44,16 +48,44 @@ export const PROMOTION = [
   {
     id: 1,
     imgUrl: Promotionpic1,
-    title: "Book With Us You're Guaranteed An Extraordinary...",
+    title: "Phuket",
     sub: "book with vacay stay better",
-    link: "/",
+    link: "https://www.vacaybeds.com/_files/ugd/97944f_903c84bd438c49e0a9eb5efaa04104aa.pdf",
   },
   {
     id: 2,
     imgUrl: Promotionpic2,
-    title: "Auspicious Thai Desserts",
+    title: "Krabi",
     sub: "auspicious thai desserts",
-    Link: "/",
+    Link: "https://www.vacaybeds.com/_files/ugd/97944f_1781710559d245b18c8599ccabb024fe.pdf",
+  },
+  {
+    id: 3,
+    imgUrl: Promotionpic3,
+    title: "Samai",
+    sub: "auspicious thai desserts",
+    Link: "https://www.vacaybeds.com/_files/ugd/97944f_1781710559d245b18c8599ccabb024fe.pdf",
+  },
+  {
+    id: 4,
+    imgUrl: Promotionpic4,
+    title: "Bangkok",
+    sub: "auspicious thai desserts",
+    Link: "https://www.vacaybeds.com/_files/ugd/97944f_a27da57fe1494e2b825231474f4c06ab.pdf",
+  },
+  {
+    id: 5,
+    imgUrl: Promotionpic5,
+    title: "Chiang Mai",
+    sub: "auspicious thai desserts",
+    Link: "mailto/enquiry@vacaybeds.com",
+  },
+  {
+    id: 6,
+    imgUrl: Promotionpic6,
+    title: "Pattaya",
+    sub: "auspicious thai desserts",
+    Link: "https://www.vacaybeds.com/_files/ugd/97944f_54d1648ab1f34a05b8c763c6c44a1e70.pdf",
   },
 ];
 
