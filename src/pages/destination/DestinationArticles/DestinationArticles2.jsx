@@ -7,8 +7,15 @@ import DestinationImage3 from "../../../assets/DestinationImage/CM3.jpg";
 import DestinationImage4 from "../../../assets/DestinationImage/CM4.png";
 import DestinationImage5 from "../../../assets/DestinationImage/CM5.png";
 import DestinationImage6 from "../../../assets/DestinationImage/CM6.png";
+import Map from "../../../components/map/Map";
 
 const DestinationArticles2 = () => {
+  const locations = [
+    { id: 1, name: "phuket", position: { lat: 7.878978, lng: 98.398392 } },
+    { id: 2, name: "bangkok", position: { lat: 13.7563, lng: 100.5018 } },
+    { id: 3, name: "chiang mai", position: { lat: 18.7061, lng: 98.9817 } },
+  ];
+
   return (
     <div className="max-w-screen-2xl container mx-auto lg:px-28 px-20 flex flex-col gap-6 mb-10">
       <div>

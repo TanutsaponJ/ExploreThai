@@ -1,5 +1,4 @@
 import PhuketHeaderImage from "../../../assets/DestinationImage/phuketheader.png";
-import Map from "../../../components/map/Map";
 import { PHUKET_THAILAND } from "../../../utils/data";
 
 const DestinationArticles4 = () => {
@@ -30,8 +29,6 @@ const DestinationArticles4 = () => {
           </div>
         ))}
       </div>
-
-      <Map />
     </div>
   );
 };
