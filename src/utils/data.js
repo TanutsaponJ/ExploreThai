@@ -27,7 +27,7 @@ import DestinationPic2 from "../assets/image/DestinationPic2.png";
 import DestinationPic3 from "../assets/image/DestinationPic3.png";
 import DestinationPic4 from "../assets/image/DestinationPic4.png";
 import DestinationPic5 from "../assets/image/DestinationPic5.png";
-import DestinationPic6 from "../assets/image/DestinationPic6.png";
+import DestinationPic6 from "../assets/image/Sukhothai.png";
 
 import pkpic from "../assets/DestinationImage/pkpic1.jpg";
 import pkpic2 from "../assets/DestinationImage/pkpic2.jpg";
@@ -63,7 +63,7 @@ export const DESTINATIONS = [
   { id: 3, name: "Chon Buri", image: DestinationPic3 },
   { id: 4, name: "Phuket", image: DestinationPic4 },
   { id: 5, name: "Ubon Ratchatanis", image: DestinationPic5 },
-  { id: 6, name: "Pattaya Beach", image: DestinationPic6 },
+  { id: 6, name: "Sukhothai", image: DestinationPic6 },
 ];
 
 export const SEASON_HIGHLIGHT = [
