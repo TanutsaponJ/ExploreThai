@@ -1,7 +1,18 @@
 import SeasonImage from "../../../assets/SeasonImage/September.png";
-import { FacebookShareButton, FacebookIcon } from "react-share";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  RedditShareButton,
+  RedditIcon,
+  TwitterIcon,
+  TwitterShareButton,
+  EmailShareButton,
+  EmailIcon,
+} from "react-share";
 
 const SeasonSeptember = () => {
+  const shareFaceBookUrl = "https://twitter.com/compose/tweet";
+
   return (
     <div className="max-w-screen-2xl container mx-auto lg:px-28 px-20 flex flex-col gap-4 mb-10">
       <div>
@@ -15,10 +26,27 @@ const SeasonSeptember = () => {
       </div>
 
       <div className="flex items-center gap-2">
-        <h2 className="text-sm">Share to</h2>
-        <FacebookShareButton>
-          <FacebookIcon className="w-8 h-auto rounded-lg" />
-        </FacebookShareButton>
+        <h2 className="text-xl font-bold">Share to</h2>
+        <div>
+          <FacebookShareButton url={shareFaceBookUrl} quote={"Share Your Tips"}>
+            <FacebookIcon className="w-8 h-auto rounded-lg" />
+          </FacebookShareButton>
+        </div>
+        <div>
+          <RedditShareButton url={shareFaceBookUrl} quote={"Share Your Tips"}>
+            <RedditIcon className="w-8 h-auto rounded-lg" />
+          </RedditShareButton>
+        </div>
+        <div>
+          <TwitterShareButton url={shareFaceBookUrl} quote={"Share Your Tips"}>
+            <TwitterIcon className="w-8 h-auto rounded-lg" />
+          </TwitterShareButton>
+        </div>
+        <div>
+          <EmailShareButton url={shareFaceBookUrl} quote={"Share Your Tips"}>
+            <EmailIcon className="w-8 h-auto rounded-lg" />
+          </EmailShareButton>
+        </div>
       </div>
 
       <div className="flex flex-col gap-6">
