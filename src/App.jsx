@@ -18,6 +18,7 @@ import SeasonMarch from "./pages/season/seasonList/SeasonMarch";
 import SeasonApril from "./pages/season/seasonList/SeasonApril";
 import SeasonMay from "./pages/season/seasonList/SeasonMay";
 import SeasonJune from "./pages/season/seasonList/SeasonJune";
+import SeasonJuly from "./pages/season/seasonList/SeasonJuly";
 
 const Layout = () => {
   return (
@@ -101,6 +102,14 @@ const router = createBrowserRouter([
       {
         path: "/Rainy/June",
         element: <SeasonJune />,
+      },
+      {
+        path: "/Rainy/July",
+        element: <SeasonJuly />,
+      },
+      {
+        path: "/Rainy/August",
+        element: <SeasonAugust />,
       },
     ],
   },
