@@ -5,6 +5,7 @@ import DestinationImages1 from "../../../assets/DestinationImage/Bangkok1.jpg";
 import DestinationImages2 from "../../../assets/DestinationImage/Bangkok2.jpg";
 import DestinationImages3 from "../../../assets/DestinationImage/Bangkok3.jpg";
 import DestinationImages4 from "../../../assets/DestinationImage/Bangkok4.jpg";
+import Map from "../../../components/map/Map";
 
 const DestinationArticles = () => {
   return (
