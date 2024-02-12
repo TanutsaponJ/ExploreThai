@@ -15,6 +15,7 @@ import DestinationArticles5 from "./pages/destination/DestinationArticles/Destin
 import DestinationArticles6 from "./pages/destination/DestinationArticles/DestinationArticles6";
 import SeasonFebruary from "./pages/season/seasonList/SeasonFebruary";
 import SeasonMarch from "./pages/season/seasonList/SeasonMarch";
+import SeasonApril from "./pages/season/seasonList/SeasonApril";
 
 const Layout = () => {
   return (
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
       {
         path: "/Summer/March",
         element: <SeasonMarch />,
+      },
+      {
+        path: "/Summer/April",
+        element: <SeasonApril />,
       },
     ],
   },
