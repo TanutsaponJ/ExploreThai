@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React from "react"; // Add import statement for React
+import React, { useEffect } from "react"; // Add import statement for React
 
 // Define a type for the season data
 interface Season {
@@ -15,11 +15,21 @@ interface SeasonCardProps {
 }
 
 const SeasonCard: React.FC<SeasonCardProps> = ({ seasonData }) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center gap-4">
       {seasonData.slice(0, 4).map((seasons) => (
         <div key={seasons.id} className="relative mx-auto">
-          <Link to={`/${seasons.season}/${seasons.title}`}>
+          <Link
+            onClick={scrollToTop}
+            to={`/${seasons.season}/${seasons.title}`}
+          >
             <img
               src={seasons.imgUrl}
               alt={seasons.id}

@@ -16,6 +16,8 @@ import DestinationArticles6 from "./pages/destination/DestinationArticles/Destin
 import SeasonFebruary from "./pages/season/seasonList/SeasonFebruary";
 import SeasonMarch from "./pages/season/seasonList/SeasonMarch";
 import SeasonApril from "./pages/season/seasonList/SeasonApril";
+import SeasonMay from "./pages/season/seasonList/SeasonMay";
+import SeasonJune from "./pages/season/seasonList/SeasonJune";
 
 const Layout = () => {
   return (
@@ -91,6 +93,14 @@ const router = createBrowserRouter([
       {
         path: "/Summer/April",
         element: <SeasonApril />,
+      },
+      {
+        path: "/Summer/May",
+        element: <SeasonMay />,
+      },
+      {
+        path: "/Rainy/June",
+        element: <SeasonJune />,
       },
     ],
   },

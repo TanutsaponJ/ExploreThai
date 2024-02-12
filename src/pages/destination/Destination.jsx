@@ -4,6 +4,12 @@ import { FaArrowRight } from "react-icons/fa";
 import { DESTINATIONS } from "../../utils/data";
 
 const Destination = () => {
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="container max-w-screen-2xl mx-auto xl:px-28 px-4 py-20 space-y-8 border-b-2">
       <div className="flex flex-col md:flex-row gap-4">
@@ -24,6 +30,7 @@ const Destination = () => {
             <Link
               to={`/destination/${destination.id}`}
               className="flex flex-col items-center justify-center"
+              onClick={ScrollToTop}
             >
               <img
                 src={destination.image}
