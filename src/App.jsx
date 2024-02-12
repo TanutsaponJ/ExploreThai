@@ -19,6 +19,7 @@ import SeasonApril from "./pages/season/seasonList/SeasonApril";
 import SeasonMay from "./pages/season/seasonList/SeasonMay";
 import SeasonJune from "./pages/season/seasonList/SeasonJune";
 import SeasonJuly from "./pages/season/seasonList/SeasonJuly";
+import SeasonAugust from "./pages/season/seasonList/SeasonAugust";
 
 const Layout = () => {
   return (

@@ -89,10 +89,10 @@ const SeasonJuly = () => {
 
         <div>
           <h3 className="text-xl font-semibold text-center">
-            During the long Vacation in July, don't miss out on these amazing
-            natural tourist attractions, charming traditions and fascinating
-            festivals of Thailand. You’ll definitely gain so many memorable and
-            enjoyable experiences.{" "}
+            During the long Vacation in July, don&apos;t miss out on these
+            amazing natural tourist attractions, charming traditions and
+            fascinating festivals of Thailand. You’ll definitely gain so many
+            memorable and enjoyable experiences.{" "}
           </h3>
         </div>
       </div>
