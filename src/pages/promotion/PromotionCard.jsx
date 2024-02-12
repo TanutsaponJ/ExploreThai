@@ -7,9 +7,9 @@ const PromotionCard = ({ subtitle, imgUrl, title, link }) => {
   return (
     <Link to={link}>
       <div className="min-w-48 flex flex-col items-center justify-center sm:py-14 hover:scale-105 duration-300 ">
-        <div className="flex flex-col justify-center items-center space-y-4 relative ">
+        <div className="flex flex-col justify-center items-center space-y-4 relative shadow-md border-2 border-white ">
           <img src={imgUrl} alt={title} className="" />
-          <div className="w-full h-auto absolute flex flex-col gap-2">
+          <div className="w-full h-auto absolute flex flex-col gap-2 ">
             <h1 className="text-xl md:text-2xl text-white mt-1 text-center uppercase">
               {title}
             </h1>

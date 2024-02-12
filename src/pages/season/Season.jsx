@@ -7,7 +7,7 @@ import { SEASON_HIGHLIGHT } from "../../utils/data";
 
 const Season = () => {
   const [seasonData, setSeasonData] = useState(SEASON_HIGHLIGHT);
-  const [selectedSeason, setSelectedSeason] = useState("");
+  const [selectedSeason, setSelectedSeason] = useState("Summer");
 
   const filterSeasons = (seasonType) => {
     const filteredSeasons = SEASON_HIGHLIGHT.filter(
@@ -26,7 +26,7 @@ const Season = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col gap-5 md:flex-row items-center justify-around  mb-4">
+        <div className="flex gap-5 md:flex-row items-center justify-around  mb-4">
           <button
             onClick={() => filterSeasons("Summer")}
             className={`flex items-center gap-4  bg-orange-400 px-6 text-white rounded-md py-2 font-semibold hover:bg-orange-800 transition-all duration-300 ease-in-out hover:text-black  ${

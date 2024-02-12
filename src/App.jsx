@@ -13,6 +13,7 @@ import DestinationArticles3 from "./pages/destination/DestinationArticles/Destin
 import DestinationArticles4 from "./pages/destination/DestinationArticles/DestinationArticles4";
 import DestinationArticles5 from "./pages/destination/DestinationArticles/DestinationArticles5";
 import DestinationArticles6 from "./pages/destination/DestinationArticles/DestinationArticles6";
+import SeasonFebruary from "./pages/season/seasonList/SeasonFebruary";
 
 const Layout = () => {
   return (
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
       {
         path: "/Destination/6",
         element: <DestinationArticles6 />,
+      },
+      {
+        path: "/Summer/February",
+        element: <SeasonFebruary />,
       },
     ],
   },
