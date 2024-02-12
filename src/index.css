@@ -19,6 +19,10 @@
   @apply w-full h-auto rounded-lg;
 }
 
+.Season-Text {
+  @apply text-lg text-gray-700 leading-relaxed indent-10 px-2;
+}
+
 .text-gradient {
   background: linear-gradient(96deg, #285091 11.46%, #4e8bf1 91.65%);
   background-clip: text;

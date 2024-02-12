@@ -16,7 +16,7 @@ interface SeasonCardProps {
 
 const SeasonCard: React.FC<SeasonCardProps> = ({ seasonData }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 items-center justify-center gap-8 shadow-md">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 items-center gap-4">
       {seasonData.slice(0, 4).map((seasons) => (
         <div key={seasons.id} className="relative mx-auto">
           <Link to={`/${seasons.season}/${seasons.title}`}>
