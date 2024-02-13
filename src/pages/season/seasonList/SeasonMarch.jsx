@@ -1,4 +1,5 @@
 import SeasonImage from "../../../assets/SeasonImage/March.png";
+import ShareLink from "../../../utils/ShareLink";
 
 const SeasonMarch = () => {
   return (
@@ -12,6 +13,8 @@ const SeasonMarch = () => {
           Thailand: March
         </h1>
       </div>
+
+      <ShareLink />
 
       <div className="flex flex-col gap-6 mb-10">
         <div>
