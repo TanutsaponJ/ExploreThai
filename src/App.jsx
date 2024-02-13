@@ -23,6 +23,7 @@ import SeasonAugust from "./pages/season/seasonList/SeasonAugust";
 import SeasonSeptember from "./pages/season/seasonList/SeasonSeptember";
 import SeasonOctober from "./pages/season/seasonList/SeasonOctober";
 import SeasonNovember from "./pages/season/seasonList/SeasonNovember";
+import SeasonDecember from "./pages/season/seasonList/SeasonDecember";
 
 const Layout = () => {
   return (
@@ -55,6 +56,7 @@ const SeasonsHighlight = [
   { path: "/Rainy/September", component: SeasonSeptember },
   { path: "/Winter/October", component: SeasonOctober },
   { path: "/Winter/November", component: SeasonNovember },
+  { path: "/Winter/December", component: SeasonDecember },
 ];
 
 const SeasonsRoutes = SeasonsHighlight.map(
