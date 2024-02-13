@@ -1,5 +1,6 @@
 import { PROMOTION } from "../../utils/data";
 import PromotionCard from "./PromotionCard";
+import Video from "../../assets/Video/PROMOTIONS.mp4";
 
 const Promotions = () => {
   return (
@@ -7,6 +8,13 @@ const Promotions = () => {
       <div className="flex flex-col md:flex-row  items-center gap-4 mb-4">
         <h1 className="text-5xl font-semibold uppercase text-gradient text-left md:p-1.5 inline-flex">
           Promotions With Vacay
+        </h1>
+      </div>
+
+      <div className="relative mb-10">
+        <video src={Video} autoPlay loop muted></video>
+        <h1 className="absolute md:text-5xl text-2xl text-nowrap  text-white top-1/2 left-1/2 z-10 transform -translate-x-1/2 -translate-y-1/2">
+          DISCOVER MORE THAILAND
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "../../utils/Button";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-const PromotionCard = ({ subtitle, imgUrl, title, link }) => {
+const PromotionCard = ({ imgUrl, title, link }) => {
   return (
     <Link to={link}>
       <div className="min-w-48 flex flex-col items-center justify-center sm:py-14 hover:scale-105 duration-300 ">
