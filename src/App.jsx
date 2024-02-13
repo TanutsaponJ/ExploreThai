@@ -21,6 +21,8 @@ import SeasonJune from "./pages/season/seasonList/SeasonJune";
 import SeasonJuly from "./pages/season/seasonList/SeasonJuly";
 import SeasonAugust from "./pages/season/seasonList/SeasonAugust";
 import SeasonSeptember from "./pages/season/seasonList/SeasonSeptember";
+import SeasonOctober from "./pages/season/seasonList/SeasonOctober";
+import SeasonNovember from "./pages/season/seasonList/SeasonNovember";
 
 const Layout = () => {
   return (
@@ -32,6 +34,46 @@ const Layout = () => {
   );
 };
 
+const articles = [Articles1, Articles2, Articles3, Articles4, Articles5];
+const destinations = [
+  DestinationArticles1,
+  DestinationArticles2,
+  DestinationArticles3,
+  DestinationArticles4,
+  DestinationArticles5,
+  DestinationArticles6,
+];
+
+const SeasonsHighlight = [
+  { path: "/Summer/February", component: SeasonFebruary },
+  { path: "/Summer/March", component: SeasonMarch },
+  { path: "/Summer/April", component: SeasonApril },
+  { path: "/Summer/May", component: SeasonMay },
+  { path: "/Rainy/June", component: SeasonJune },
+  { path: "/Rainy/July", component: SeasonJuly },
+  { path: "/Rainy/August", component: SeasonAugust },
+  { path: "/Rainy/September", component: SeasonSeptember },
+  { path: "/Winter/October", component: SeasonOctober },
+  { path: "/Winter/November", component: SeasonNovember },
+];
+
+const SeasonsRoutes = SeasonsHighlight.map(
+  ({ path, component: Component }) => ({
+    path,
+    element: <Component />,
+  })
+);
+
+const ArticlesRoutes = articles.map((Article, index) => ({
+  path: `/Articles/${index + 1}`,
+  element: <Article />,
+}));
+
+const DestinationsRoutes = destinations.map((Destination, index) => ({
+  path: `/destination/${index + 1}`,
+  element: <Destination />,
+}));
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,82 +83,9 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      {
-        path: "/Articles/1",
-        element: <Articles1 />,
-      },
-      {
-        path: "/Articles/2",
-        element: <Articles2 />,
-      },
-      {
-        path: "/Articles/3",
-        element: <Articles3 />,
-      },
-      {
-        path: "/Articles/4",
-        element: <Articles4 />,
-      },
-      {
-        path: "/Articles/5",
-        element: <Articles5 />,
-      },
-      {
-        path: "/Destination/1",
-        element: <DestinationArticles1 />,
-      },
-      {
-        path: "/Destination/2",
-        element: <DestinationArticles2 />,
-      },
-      {
-        path: "/Destination/3",
-        element: <DestinationArticles3 />,
-      },
-      {
-        path: "/Destination/4",
-        element: <DestinationArticles4 />,
-      },
-      {
-        path: "/Destination/5",
-        element: <DestinationArticles5 />,
-      },
-      {
-        path: "/Destination/6",
-        element: <DestinationArticles6 />,
-      },
-      {
-        path: "/Summer/February",
-        element: <SeasonFebruary />,
-      },
-      {
-        path: "/Summer/March",
-        element: <SeasonMarch />,
-      },
-      {
-        path: "/Summer/April",
-        element: <SeasonApril />,
-      },
-      {
-        path: "/Summer/May",
-        element: <SeasonMay />,
-      },
-      {
-        path: "/Rainy/June",
-        element: <SeasonJune />,
-      },
-      {
-        path: "/Rainy/July",
-        element: <SeasonJuly />,
-      },
-      {
-        path: "/Rainy/August",
-        element: <SeasonAugust />,
-      },
-      {
-        path: "/Rainy/September",
-        element: <SeasonSeptember />,
-      },
+      ...ArticlesRoutes,
+      ...DestinationsRoutes,
+      ...SeasonsRoutes,
     ],
   },
 ]);

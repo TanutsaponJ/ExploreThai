@@ -3,7 +3,7 @@ import ShareLink from "../../../utils/ShareLink";
 
 const SeasonMarch = () => {
   return (
-    <div className="max-w-screen container mx-auto lg:px-28 px-20 flex flex-col gap-6">
+    <div className="max-w-screen-2xl container mx-auto lg:px-28 px-20 flex flex-col gap-6">
       <div>
         <img src={SeasonImage} alt="" />
       </div>
