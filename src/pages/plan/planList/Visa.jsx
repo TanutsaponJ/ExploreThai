@@ -186,28 +186,32 @@ const Visa = () => {
             </div>
           </div>
 
-          <div>
-            <div>
+          <div className="flex flex-col gap-4">
+            <div className="flex justify-center">
               <img src={PlanTripImage3} alt="" />
             </div>
             <div>
-              <h1>
+              <h1 className="text-3xl font-bold">
                 List of Thailand Immigration Checkpoints for Visa on Arrival
               </h1>
             </div>
-            <div>
+            <div className="flex flex-col gap-2">
               {locations.map((location) => (
-                <div key={location.id}>
+                <div
+                  key={location.id}
+                  className="flex gap-2 flex-row
+                "
+                >
                   <div>
-                    <p>{location.id}</p>
+                    <p className="Articles-text">{location.id}</p>
                   </div>
 
-                  <div>
+                  <div className="flex flex-col md:flex-row">
                     <div>
-                      <h3>{location.name}</h3>
+                      <h3 className="text-xl font-bold">{location.name}</h3>
                     </div>
                     <div>
-                      <p>{location.city}</p>
+                      <p className="Articles-text">{location.city}</p>
                     </div>
                   </div>
                 </div>
@@ -215,7 +219,7 @@ const Visa = () => {
             </div>
 
             <div>
-              <p>
+              <p className="Articles-text">
                 There are currency exchange counters at major airports. If a
                 traveler is entering Thailand by land, it is best to exchange
                 currency for Thai Baht before leaving their home country.
@@ -223,29 +227,33 @@ const Visa = () => {
             </div>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-4">
             <div>
-              <h1>COVID and Vaccination Requirements</h1>
+              <h1 className="text-4xl font-bold">
+                COVID and Vaccination Requirements
+              </h1>
             </div>
 
             <div>
-              <p>
+              <p className="Articles-text">
                 Visa on Arrival is issued without need of showing any proof of
                 COVID vaccination.
               </p>
             </div>
 
-            <div>
+            <div className="flex justify-center">
               <img src={PlanTripImage4} alt="" />
             </div>
           </div>
 
           <div>
-            <h1>Travel Insurance for Visa on Arrival Visitors</h1>
+            <h1 className="text-4xl font-bold">
+              Travel Insurance for Visa on Arrival Visitors
+            </h1>
           </div>
 
           <div>
-            <p>
+            <p className="Articles-text">
               With travel restrictions eased, Thailand removed the need for Visa
               on Arrival travelers to provide proof of a valid Covid Insurance
               policy. It is important to note that foreign visitors are not
@@ -255,25 +263,29 @@ const Visa = () => {
             </p>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-4">
             <div>
-              <p>
+              <p className="Articles-text">
                 Travel insurance is a wise choice for people traveling abroad.
                 It not only covers Covid-related incidents but also:
               </p>
             </div>
 
-            <div>
+            <div className="flex flex-col gap-4">
               {insuranceCoverage.map((insurance) => (
-                <div key={insurance.id}>
-                  <div>{insurance.id}</div>
-                  <div>{insurance.type}</div>
+                <div key={insurance.id} className="flex gap-2 ">
+                  <div>
+                    <p className="Articles-text">{insurance.id}</p>
+                  </div>
+                  <div>
+                    <p className="Articles-text">{insurance.type}</p>
+                  </div>
                 </div>
               ))}
             </div>
 
             <div>
-              <p>
+              <p className="Articles-text">
                 To ensure you have the best cover possible while visiting
                 Thailand and to avoid potential exclusions or conditions, choose
                 Travel Insurance which is designed for Thailand.
@@ -281,13 +293,15 @@ const Visa = () => {
             </div>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-4">
             <div>
-              <h1>AXA Thailand: AXA Sawasdee Thailand</h1>
+              <h1 className="text-4xl font-bold">
+                AXA Thailand: AXA Sawasdee Thailand
+              </h1>
             </div>
 
             <div>
-              <p>
+              <p className="Articles-text">
                 AXA Sawasdee Thailand is a well-known and respected insurance
                 company in Thailand that caters to travelers from around the
                 world. Their policies are straightforward, approved in minutes,
@@ -295,9 +309,9 @@ const Visa = () => {
               </p>
             </div>
 
-            <div>
+            <div className="flex gap-2 items-center">
               <div>
-                <p>
+                <p className="Articles-text">
                   For the best Travel Insurance for a Visa on Arrival traveler,
                   you can look to
                 </p>
@@ -307,8 +321,9 @@ const Visa = () => {
                   to="https://direct.axa.co.th/TA-Inbound/CoverageOptionPlan?utm_source=Agent_Partner&utm_medium=Direct_SiamLegal&utm_campaign=Sawasdee_SiamLegal"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-xl  text-blue-500 font-bold"
                 >
-                  AXA Thailand.
+                  AXA Thailand.!
                 </Link>
               </div>
             </div>

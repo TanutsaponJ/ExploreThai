@@ -12,12 +12,14 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-slate-500">
       <div className="container mx-auto flex flex-wrap item-center justify-between px-6 max-w-screen-2xl">
         <div className="w-full static mx-auto top-0 flex justify-between lg:w-auto lg:static lg:justify-start h-[10vh] items-center ">
-          <Link to="/" className="flex items-center">
-            <h1 className="font-medium cursor-pointer text-lg">Explore</h1>
-            <span className="font-bold text-orange-800 text-xl">Thai.</span>
-          </Link>
+          <div>
+            <Link to="/" className="flex items-center">
+              <h1 className="font-medium cursor-pointer text-lg">Explore</h1>
+              <span className="font-bold text-orange-800 text-xl">Thai.</span>
+            </Link>
+          </div>
 
-          <div className="flex items-center">
+          <div className="flex items-centers">
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 h-[3rem] block lg:hidden outline-none focus:outline-none"
               onClick={() => setOpenMenu(!openMenu)}
@@ -37,7 +39,7 @@ const Navbar = () => {
               <Link
                 to={nav.path}
                 key={index}
-                className="py-2 flex text-white uppercase font-medium items-center leading-snug hover:text-orange-600 transition-all duration-150 ease-in-out"
+                className="py-2 flex  text-white uppercase font-medium items-center leading-snug hover:text-orange-600 transition-all duration-150 ease-in-out"
               >
                 {nav.title}
               </Link>
