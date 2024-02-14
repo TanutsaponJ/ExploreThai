@@ -26,6 +26,7 @@ import {
   SeasonDecember,
   SeasonJanuary,
 } from "./index";
+import Visa from "./pages/plan/planList/Visa";
 
 const Layout = () => {
   return (
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
       ...ArticlesRoutes,
       ...DestinationsRoutes,
       ...SeasonsRoutes,
+      {
+        path: "/planTrip/Visa",
+        element: <Visa />,
+      },
     ],
   },
 ]);

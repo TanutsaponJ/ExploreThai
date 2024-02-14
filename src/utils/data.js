@@ -71,7 +71,7 @@ export const PROMOTION = [
     imgUrl: Promotionpic4,
     title: "Bangkok",
     sub: "auspicious thai desserts",
-    link: "https://www.vacaybeds.com/_files/ugd/97944f_a27da57fe1494e2b825231474f4c06ab.pdf",
+    link: "https://www.vacaybeds.com/_files/ugd/97944f_a27da57fe1494e2b825231474f4c06ab.pdfxs",
   },
   {
     id: 5,
@@ -244,4 +244,115 @@ export const PHUKET_THAILAND = [
     description:
       "A captivating destination known for its stunning beauty and laid-back atmosphere found its way to the west coast of Phuket, Thailand. We are talking about Surin Beach, known by its nickname, “Millionaires’ Row,” due to its popularity among wealthy visitors and the luxurious resorts that line the shore. Near this stunning beach, you can find Laem Singh’s viewpoint, offering breathtaking panoramic views of the coastline and surrounding islands. Also, do not forget that Surin Beach is renowned for its stunning sunsets, so plan your visit to the viewpoint accordingly. In addition, the quaint Surin Plaza is a great place to explore local handicrafts. When it comes to nightlife, the beach offers a more relaxed ambiance compared to other areas of Phuket. There are a few bars and beach clubs where visitors can enjoy a drink and live music.",
   },
+];
+
+export const travelerRequirements = [
+  {
+    id: 1,
+    dec: "Be from an approved country.",
+  },
+  {
+    id: 2,
+    dec: "Be visiting Thailand strictly for tourism purposes.",
+  },
+  {
+    id: 3,
+    dec: "Hold a genuine passport with a valid expiry of more than 30 days.",
+  },
+  {
+    id: 4,
+    dec: "Be able to list a valid accommodation address in Thailand that can be verified. This address can be a hotel or an apartment.",
+  },
+  {
+    id: 5,
+    dec: "Must have a confirmed return ticket exiting Thailand within 15 days. Open tickets do not qualify. Traveling overland by train, bus, etc to Cambodia, Laos, Malaysia (including en route to Singapore), Myanmar, etc is not accepted as proof of exiting Thailand.**",
+  },
+];
+
+export const RequiredDocuments = [
+  {
+    dec: "Genuine passport valid for 30 days or more.",
+  },
+  {
+    dec: "One photo with the size of 4 x 6 cm taken within six months.",
+  },
+  {
+    dec: "Provide a valid address in Thailand.",
+  },
+  {
+    dec: "Proof of a fully paid return air ticket.",
+  },
+  {
+    dec: "Completed Visa on Arrival Form TM88:",
+    link: "https://www.thaiembassy.com/faq/application-form-for-visa-on-arrival",
+  },
+];
+
+export const countriesEligible = [
+  { name: "Bulgaria" },
+  { name: "Bhutan" },
+  { name: "China", info: "free 30 days stay until February 29, 2024" },
+  { name: "Cyprus" },
+  { name: "Ethiopia" },
+  { name: "Fiji" },
+  { name: "Georgia" },
+  { name: "India" },
+  { name: "Kazakhstan", info: "free 30 days stay until February 29, 2024" },
+  { name: "Malta" },
+  { name: "Mexico" },
+  { name: "Nauru" },
+  { name: "Mauritius" },
+  { name: "Papua New Guinea" },
+  { name: "Romania" },
+  { name: "Saudi Arabia" },
+  { name: "Taiwan" },
+  { name: "Uzbekistan" },
+  { name: "Vanuatu" },
+];
+
+export const locations = [
+  { id: 1, name: "Suvarnabhumi Airport" },
+  { id: 2, name: "Don Muang International Airport", city: "Bangkok" },
+  { id: 3, name: "Chiangmai International Airport", city: "Chiangmai" },
+  { id: 4, name: "Phuket International Airport", city: "Phuket" },
+  { id: 5, name: "Hatyai International Airport", city: "Songkhla" },
+  { id: 6, name: "U Tapao Airport", city: "Rayong" },
+  { id: 7, name: "Mae Sai Immigration Checkpoint", city: "Chiengrai" },
+  { id: 8, name: "Chieng Saen Immigration Checkpoint", city: "Chiengrai" },
+  { id: 9, name: "Chieng Khong Immigration Checkpoint", city: "Chiengrai" },
+  { id: 10, name: "Betong Immigration Checkpoint", city: "Yala" },
+  { id: 11, name: "Sadoa Immigration Checkpoint", city: "Songkhla" },
+  { id: 12, name: "Samui Airport", city: "Surat Thani" },
+  {
+    id: 13,
+    name: "Sukhothai International Airport",
+    city: "Tak Immigration Checkpoint",
+  },
+  { id: 14, name: "Bangkok Harbour Immigration Checkpoint", city: "Bangkok" },
+  { id: 15, name: "Sri Racha Immigration Checkpoint", city: "Chonburi" },
+  { id: 16, name: "Mabtaput Immigration Checkpoint", city: "Rayong" },
+  { id: 17, name: "Nong Khai Immigration Checkpoint", city: "Nong Khai" },
+  { id: 18, name: "Samui Immigration Checkpoint", city: "Surat Thani" },
+  { id: 19, name: "Phuket Immigration Checkpoint", city: "Phuket" },
+  { id: 20, name: "Satun Immigration Checkpoint", city: "Satun" },
+  { id: 21, name: "Krabi Immigration Checkpoint", city: "Krabi" },
+  { id: 22, name: "Songkhla Harbour Immigration Checkpoint", city: "Songkhla" },
+  {
+    id: 23,
+    name: "Chiangrai Airport Immigration Checkpoint",
+    city: "Chiangrai",
+  },
+  {
+    id: 24,
+    name: "Surat Thani Airport Immigration Checkpoint",
+    city: "Surat Thani",
+  },
+];
+
+export const insuranceCoverage = [
+  { id: 1, type: "Medical emergencies" },
+  { id: 2, type: "Personal injury & accidents" },
+  { id: 3, type: "Missed or delayed flights" },
+  { id: 4, type: "Damage to belongings" },
+  { id: 5, type: "Lost luggage" },
 ];

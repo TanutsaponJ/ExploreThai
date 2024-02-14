@@ -12,8 +12,11 @@ const Promotions = () => {
       </div>
 
       <div className="relative mb-10">
-        <video src={Video} autoPlay loop muted></video>
-        <h1 className="absolute md:text-5xl text-2xl text-nowrap  text-white top-1/2 left-1/2 z-10 transform -translate-x-1/2 -translate-y-1/2">
+        <video src={Video} autoPlay loop muted className="relative"></video>
+
+        <div className="absolute w-full h-full top-0 right-0 bg-black opacity-50" />
+
+        <h1 className="absolute md:text-5xl lg:text-6xl text-2xl text-nowrap  text-white top-1/2 left-1/2 z-10 transform -translate-x-1/2 -translate-y-1/2">
           DISCOVER MORE THAILAND
         </h1>
       </div>

@@ -11,7 +11,10 @@ const PlanTrip = () => {
         </h1>
       </div>
       <div className="flex justify-center flex-col md:flex-row gap-4">
-        <Link className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200">
+        <Link
+          to={`/planTrip/Visa`}
+          className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
+        >
           <FaAddressBook className="w-10 h-10 inline-flex text-orange-500 mb-4" />
           <span>Visa & Passport</span>
         </Link>
