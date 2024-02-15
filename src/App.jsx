@@ -28,6 +28,7 @@ import {
 } from "./index";
 import Visa from "./pages/plan/planList/Visa";
 import TravelInThailand from "./pages/plan/planList/TravelinThailand";
+import GettingAround from "./pages/plan/planList/GettingAround";
 
 const Layout = () => {
   return (
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
       {
         path: "/planTrip/TravelInThailand",
         element: <TravelInThailand />,
+      },
+      {
+        path: "/planTrip/GettingAround",
+        element: <GettingAround />,
       },
     ],
   },
