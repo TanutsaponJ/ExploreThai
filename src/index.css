@@ -15,6 +15,10 @@
   @apply text-lg text-gray-700 leading-relaxed px-2;
 }
 
+.Plan-text {
+  @apply text-lg text-gray-700;
+}
+
 .Articles-Image {
   @apply w-full h-auto rounded-lg;
 }
