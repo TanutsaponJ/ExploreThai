@@ -38,8 +38,30 @@ const TravelInThailand = () => {
           >
             Land
           </Link>
-          <Link className="Plan-text">Boat</Link>
-          <Link className="Plan-text">Air</Link>
+          <Link
+            to="#"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("boat")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            className="Plan-text"
+          >
+            Boat
+          </Link>
+          <Link
+            to="#"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("air")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            className="Plan-text"
+          >
+            Air
+          </Link>
         </div>
 
         <div>
@@ -97,7 +119,7 @@ const TravelInThailand = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4" id="air">
           <div>
             <h1 className="text-3xl font-bold ">Air</h1>
           </div>
@@ -150,8 +172,10 @@ const TravelInThailand = () => {
               </p>
             </div>
             <div>
-              <h1>Bangkok AVIATION CENTER CO.,LTD.(BAC)</h1>
-              <p>
+              <h1 className="text-3xl text-blue-400 font-bold">
+                Bangkok AVIATION CENTER CO.,LTD.(BAC)
+              </h1>
+              <p className="Plan-text">
                 Name : Bangkok Aviation center Co.,Ltd.(BAC) Address : 222
                 Hanger 4414 Viphavadee Rangsit Road, Sikan , Donmuang, Bangkok
                 10210 Thailand. Telephone : 66 2535 7740-2
@@ -160,7 +184,7 @@ const TravelInThailand = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="flex justify-center mb-10">
         <img src={PlanImage1} alt="" />
       </div>
     </div>
