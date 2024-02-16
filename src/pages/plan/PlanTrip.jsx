@@ -21,12 +21,12 @@ const PlanTrip = () => {
           Plan Your Trip
         </h1>
       </div>
-      <div className="flex justify-center flex-col md:flex-row gap-4">
+      <div className="flex justify-center items-center flex-col  md:flex-row gap-4">
         {/* Link to the Visa & Passport page, with an onClick event to scroll to the top */}
         <Link
           to={`/planTrip/${1}`}
           onClick={ScrollToTop}
-          className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
+          className="flex flex-col items-center shadow-md py-5 flex-grow  w-52 md:-32 h-32 hover:bg-gray-200 transition-colors duration-200"
         >
           <FaAddressBook className="w-10 h-10 inline-flex text-orange-500 mb-4" />
           <span>Visa & Passport</span>
@@ -36,17 +36,17 @@ const PlanTrip = () => {
         <Link
           to={`/planTrip/${2}`}
           onClick={ScrollToTop}
-          className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
+          className="flex flex-col items-center shadow-md py-5 flex-grow  w-52 md:-32 h-32 hover:bg-gray-200 transition-colors duration-200"
         >
-          <FaTrain className="w-10 h-10 inline-flex text-orange-500 mb-4" />
-          <span>Travel In Thailand</span>
+          <FaTrain className="w-10 h-10 inline-flex text-orange-500 mb-4 " />
+          <span className="text-center">Travel In Thailand</span>
         </Link>
 
         {/* Link to the Getting Around page */}
         <Link
           to={`/planTrip/${3}`}
           onClick={ScrollToTop}
-          className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
+          className="flex flex-col items-center shadow-md py-5 flex-grow   w-52 md:-32 h-32 hover:bg-gray-200 transition-colors duration-200"
         >
           <FaPlane className="w-10 h-10 inline-flex text-orange-500 mb-4" />
           <span>Getting Around</span>
@@ -56,7 +56,7 @@ const PlanTrip = () => {
         <Link
           to={`/planTrip/${4}`}
           onClick={ScrollToTop}
-          className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
+          className="flex flex-col items-center shadow-md py-5 flex-grow  w-52 md:-32 h-32 hover:bg-gray-200 transition-colors duration-200"
         >
           <TiWeatherPartlySunny className="w-10 h-10 inline-flex text-orange-500 mb-4" />
           <span>Weather</span>
