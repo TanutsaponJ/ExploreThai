@@ -53,7 +53,11 @@ const PlanTrip = () => {
         </Link>
 
         {/* Link to the Weather page */}
-        <Link className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200">
+        <Link
+          to={"/planTrip/Weather"}
+          onClick={ScrollToTop}
+          className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
+        >
           <TiWeatherPartlySunny className="w-10 h-10 inline-flex text-orange-500 mb-4" />
           <span>Weather</span>
         </Link>

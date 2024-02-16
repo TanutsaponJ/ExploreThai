@@ -27,8 +27,9 @@ import {
   SeasonJanuary,
 } from "./index";
 import Visa from "./pages/plan/planList/Visa";
-import TravelInThailand from "./pages/plan/planList/TravelinThailand";
+import TravelInThailand from "./pages/plan/planList/TravelInThailand";
 import GettingAround from "./pages/plan/planList/GettingAround";
+import Weather from "./pages/plan/planList/Weather";
 
 const Layout = () => {
   return (
@@ -105,6 +106,10 @@ const router = createBrowserRouter([
       {
         path: "/planTrip/GettingAround",
         element: <GettingAround />,
+      },
+      {
+        path: "/planTrip/Weather",
+        element: <Weather />,
       },
     ],
   },
