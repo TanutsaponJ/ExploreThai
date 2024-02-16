@@ -24,7 +24,7 @@ const PlanTrip = () => {
       <div className="flex justify-center flex-col md:flex-row gap-4">
         {/* Link to the Visa & Passport page, with an onClick event to scroll to the top */}
         <Link
-          to={`/planTrip/Visa`}
+          to={`/planTrip/${1}`}
           onClick={ScrollToTop}
           className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
         >
@@ -34,7 +34,7 @@ const PlanTrip = () => {
 
         {/* Link to the Travel In Thailand page */}
         <Link
-          to={"/planTrip/TravelInThailand"}
+          to={`/planTrip/${2}`}
           onClick={ScrollToTop}
           className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
         >
@@ -44,7 +44,7 @@ const PlanTrip = () => {
 
         {/* Link to the Getting Around page */}
         <Link
-          to={"/planTrip/GettingAround"}
+          to={`/planTrip/${3}`}
           onClick={ScrollToTop}
           className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
         >
@@ -54,7 +54,7 @@ const PlanTrip = () => {
 
         {/* Link to the Weather page */}
         <Link
-          to={"/planTrip/Weather"}
+          to={`/planTrip/${4}`}
           onClick={ScrollToTop}
           className="flex flex-col items-center shadow-md py-5 flex-grow hover:bg-gray-200 transition-colors duration-200"
         >

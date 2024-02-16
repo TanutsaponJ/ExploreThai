@@ -23,3 +23,8 @@ export { default as SeasonOctober } from "./pages/season/seasonList/SeasonOctobe
 export { default as SeasonNovember } from "./pages/season/seasonList/SeasonNovember";
 export { default as SeasonDecember } from "./pages/season/seasonList/SeasonDecember";
 export { default as SeasonJanuary } from "./pages/season/seasonList/SeasonJanuary";
+
+export { default as Plan1 } from "./pages/plan/planList/Visa";
+export { default as Plan2 } from "./pages/plan/planList/TravelInThailand";
+export { default as Plan3 } from "./pages/plan/planList/GettingAround";
+export { default as Plan4 } from "./pages/plan/planList/Weather";

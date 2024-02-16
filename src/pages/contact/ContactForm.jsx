@@ -12,12 +12,8 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col items-center gap-10 md:flex-row md:items-start justify-around">
-        <div className="flex flex-col items-center gap-10 w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
-          <img
-            src={ContactImage}
-            alt=""
-            className="Articles-Image w-full h-auto"
-          />
+        <div className="flex flex-col items-center justify-center h-full gap-8 w-full md:w-1/2 lg:w-1/3 ">
+          <img src={ContactImage} alt="" className="Articles-Image w-full " />
         </div>
 
         <div className="flex flex-col items-center gap-10 w-full md:w-1/2 lg:w-1/3 xl:w-1/4">

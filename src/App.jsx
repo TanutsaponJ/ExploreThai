@@ -2,17 +2,22 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
-import { Articles1, Articles2, Articles3, Articles4, Articles5 } from "./index";
 import {
+  Articles1,
+  Articles2,
+  Articles3,
+  Articles4,
+  Articles5,
+  Plan1,
+  Plan2,
+  Plan3,
+  Plan4,
   DestinationArticles1,
   DestinationArticles2,
   DestinationArticles3,
   DestinationArticles4,
   DestinationArticles5,
   DestinationArticles6,
-} from "./index";
-
-import {
   SeasonFebruary,
   SeasonMarch,
   SeasonApril,
@@ -26,10 +31,6 @@ import {
   SeasonDecember,
   SeasonJanuary,
 } from "./index";
-import Visa from "./pages/plan/planList/Visa";
-import TravelInThailand from "./pages/plan/planList/TravelInThailand";
-import GettingAround from "./pages/plan/planList/GettingAround";
-import Weather from "./pages/plan/planList/Weather";
 
 const Layout = () => {
   return (
@@ -40,6 +41,8 @@ const Layout = () => {
     </div>
   );
 };
+
+const Plans = [Plan1, Plan2, Plan3, Plan4];
 
 const articles = [Articles1, Articles2, Articles3, Articles4, Articles5];
 const destinations = [
@@ -83,6 +86,11 @@ const DestinationsRoutes = destinations.map((Destination, index) => ({
   element: <Destination />,
 }));
 
+const PlansRoutes = Plans.map((Plan, index) => ({
+  path: `/planTrip/${index + 1}`,
+  element: <Plan />,
+}));
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -95,22 +103,7 @@ const router = createBrowserRouter([
       ...ArticlesRoutes,
       ...DestinationsRoutes,
       ...SeasonsRoutes,
-      {
-        path: "/planTrip/Visa",
-        element: <Visa />,
-      },
-      {
-        path: "/planTrip/TravelInThailand",
-        element: <TravelInThailand />,
-      },
-      {
-        path: "/planTrip/GettingAround",
-        element: <GettingAround />,
-      },
-      {
-        path: "/planTrip/Weather",
-        element: <Weather />,
-      },
+      ...PlansRoutes,
     ],
   },
 ]);
