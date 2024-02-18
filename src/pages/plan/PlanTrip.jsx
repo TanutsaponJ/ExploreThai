@@ -15,7 +15,10 @@ const PlanTrip = () => {
 
   // Render the component
   return (
-    <div className="max-w-screen-2xl container mx-auto py-20 lg:px-28 px-4">
+    <div
+      id="planTrip"
+      className="max-w-screen-2xl container mx-auto py-20 lg:px-28 px-4"
+    >
       <div className="flex flex-col md:flex-row items-center gap-4 mb-5">
         <h1 className="text-5xl font-semibold uppercase text-gradient text-left md:p-1.5 inline-flex">
           Plan Your Trip

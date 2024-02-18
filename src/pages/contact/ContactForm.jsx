@@ -4,7 +4,10 @@ import { IoMdSend } from "react-icons/io";
 
 const ContactForm = () => {
   return (
-    <div className="max-w-screen-2xl container mx-auto lg:px-28 px-20   bg-orange-300/25 py-6">
+    <div
+      id="contact"
+      className="max-w-screen-2xl container mx-auto lg:px-28 px-20   bg-orange-300/25 py-6"
+    >
       <div className="mb-10">
         <h2 className="text-xl md:text-2xl lg:text-4xl font-bold  text-center text-gradient">
           Contact Me

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
+import { Link as ScrollLink } from "react-scroll";
 import { FaBars, FaEnvelope } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import navItem from "./NavItem";
@@ -8,15 +8,22 @@ import navItem from "./NavItem";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav className="sticky top-0 z-50 bg-slate-500">
       <div className="container mx-auto flex flex-wrap item-center justify-between px-6 max-w-screen-2xl">
         <div className="w-full static mx-auto top-0 flex justify-between lg:w-auto lg:static lg:justify-start h-[10vh] items-center ">
           <div>
-            <Link to="/" className="flex items-center">
+            <ScrollLink onClick={scrollToTop} className="flex items-center">
               <h1 className="font-medium cursor-pointer text-lg">Explore</h1>
               <span className="font-bold text-orange-800 text-xl">Thai.</span>
-            </Link>
+            </ScrollLink>
           </div>
 
           <div className="flex items-centers">
@@ -36,21 +43,26 @@ const Navbar = () => {
         >
           <ul className="flex flex-col lg:flex-row items-center gap-x-4 list-none lg:ml-auto lg:transform-none lg:translate-y-[-50%] lg:gap-y-0 gap-y-8">
             {navItem.map((nav, index) => (
-              <Link
+              <ScrollLink
+                activeClass="nav-Active"
                 to={nav.path}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
                 key={index}
-                className="py-2 flex  text-white uppercase font-medium items-center leading-snug hover:text-orange-600 transition-all duration-150 ease-in-out"
+                className="py-2 flex text-sm  text-white uppercase font-semibold items-center hover:text-orange-600 transition-all duration-150 ease-in-out cursor-pointer"
               >
                 {nav.title}
-              </Link>
+              </ScrollLink>
             ))}
-            <Link
+            <ScrollLink
               to="/"
               className="py-2 flex text-white items-center gap-2 bg-slate-600 rounded-md px-4 font-medium hover:translate-y-[-5px] duration-300 hover:text-orange-600"
             >
               <FaEnvelope className="h-6 w-6" />
               <p>Anakin112333@gmail.com</p>
-            </Link>
+            </ScrollLink>
           </ul>
         </div>
       </div>

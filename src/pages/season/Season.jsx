@@ -18,7 +18,10 @@ const Season = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-screen-2xl px-4 lg:px-28 py-20 border-b-2">
+    <div
+      id="season"
+      className="container mx-auto max-w-screen-2xl px-4 lg:px-28 py-20 border-b-2"
+    >
       <div>
         <div className="flex flex-col items-center mb-4 lg:items-start">
           <h1 className="text-5xl font-semibold uppercase text-gradient text-left md:p-1.5 inline-flex">

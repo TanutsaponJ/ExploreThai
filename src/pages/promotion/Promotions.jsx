@@ -4,7 +4,10 @@ import Video from "../../assets/Video/PROMOTIONS.mp4";
 
 const Promotions = () => {
   return (
-    <div className="container max-w-screen-2xl mx-auto xl:px-28 px-4 py-20 border-b-2">
+    <div
+      id="promotions"
+      className="container max-w-screen-2xl mx-auto xl:px-28 px-4 py-20 border-b-2"
+    >
       <div className="flex flex-col md:flex-row  items-center gap-4 mb-4">
         <h1 className="text-5xl font-semibold uppercase text-gradient text-left md:p-1.5 inline-flex">
           Promotions With Vacay
