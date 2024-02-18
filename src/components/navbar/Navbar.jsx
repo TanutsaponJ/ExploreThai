@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-slate-500">
+    <nav className="sticky top-0 z-50 bg-slate-500 max-w-screen-2xl mx-auto container">
       <div className="container mx-auto flex flex-wrap item-center justify-between px-6 max-w-screen-2xl">
         <div className="w-full static mx-auto top-0 flex justify-between lg:w-auto lg:static lg:justify-start h-[10vh] items-center ">
           <div>
